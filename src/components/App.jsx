@@ -40,7 +40,7 @@ export const App = () => {
       alert(`${name} is already in contacts`);
       handleClearState();
     } else {
-      setContacts([...contacts, { name: name, number: number, id: nanoid() }]);
+      setContacts([...contacts, { name, number, id: nanoid() }]);
 
       handleClearState();
     }
